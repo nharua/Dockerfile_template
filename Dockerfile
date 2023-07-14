@@ -27,7 +27,8 @@ RUN apt-get -y install \
     git \
     zsh \
     neofetch \
-    dbus-x11
+    dbus-x11 \
+    bash-completion
 
 # Install Prerequisites packages 
 RUN apt-get -y install \
@@ -40,7 +41,12 @@ RUN apt-get -y install \
     tk-dev \
     libgdbm-dev \
     libc6-dev \
-    libbz2-dev
+    libbz2-dev \
+    zlib1g-dev \
+    libncurses5-dev \
+    libnss3-dev \
+    libffi-dev \
+    pkg-config
 
 # Install Python 
 ARG PYTHON_VERSION_TAG=3.11.4
